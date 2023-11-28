@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const min = +prompt('Введите кол-во минут от 0 до 59').trim()
+
+        if (min > 0 && min <= 15) alert('Сейчас первая четверть часа')
+        else if (min > 15 && min <= 30) alert('Сейчас вторая четверть часа')
+        else if (min > 30 && min <= 45) alert('Сейчас третья четверть часа')
+        else if (min > 45 && min <= 59) alert('Сейчас четвертая четверть часа')
+
+    </script>
+</body>
+</html>

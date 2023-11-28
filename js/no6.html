@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function numToDay(dayNumber) {
+        const daysOfWeek = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+
+            if (dayNumber >= 0 && dayNumber <= 6) {
+            return daysOfWeek[dayNumber];
+                } else {
+            return "Некорректный номер дня";
+                }
+        }
+        function numToMonth(num){
+            switch(num){
+                case 0:
+                    return "Январь"
+                    break
+                case 1:
+                    return "Февраль"
+                    break
+                case 2:
+                    return "Март"
+                    break
+                case 3:
+                    return "Апрель"
+                    break
+                case 4:
+                    return "Май"
+                    break
+                case 5:
+                    return "Июнь"
+                    break
+                case 6:
+                    return "Июль"
+                    break
+                case 7:
+                    return "Август"
+                    break
+                case 8:
+                    return "Сентябрь"
+                    break
+                case 9:
+                    return "Октябрь"
+                    break
+                case 10:
+                    return "Ноябрь"
+                    break
+                case 11:
+                    return "Декабрь"
+                    break
+            }
+        }
+    let date = new Date()
+
+    document.write('В Самаре ' + date.getDate()+" " + numToMonth(date.getMonth()) +" "+ date.getFullYear() +" "+ date.getHours()+":"+date.getMinutes()+":"+date.getSeconds()+", "+numToDay(date.getDay()))
+
+    </script>
+</body>
+</html>

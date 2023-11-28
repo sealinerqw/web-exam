@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    function engColor(RusColor){
+        switch (RusColor){
+            case "Красный": 
+                document.write("Red")
+                break
+            case "Желтый":
+                document.write("Yellow")
+                break
+            case "Синий":
+                document.write("Blue")
+                break
+            case "Фиолетовый":
+                document.write("Purple")
+                break
+            default:
+                document.write("Такого цвета я не знаю")
+                break
+        }
+    }
+    
+    let color = prompt('Введите цвет')
+    engColor(color)
+    </script>
+</body>
+</html>

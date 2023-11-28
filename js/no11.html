@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let mass1 = ['Банан', 'Яблоко', 'Груша', 'Апельсин', 'Манго', 'Свекла', 'Капуста', 'Морковь', 'Огурец', 'Помидор']
+    let mass2 = ['Тигр', 'Волк', 'Лев', 'Медведь', 'Рысь', 'Сорока', 'Воробей', 'Ворона', 'Филин', 'Синица']
+
+    console.log(mass1)
+    console.log(mass2)
+
+    const fruit = mass1.slice(0, 5)
+    const bird = mass2.slice(5, 10)
+    fruit.unshift('Мандарин')
+    bird.push('Соловей')
+    console.log(fruit)
+    console.log(bird)
+
+    bird.reverse()
+    console.log(bird)
+
+    const fruit1 = fruit.map(item => {
+        return item + ' - съел'
+    })
+
+    console.log(fruit1)
+    </script>
+</body>
+</html>

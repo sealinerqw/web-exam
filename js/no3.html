@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цвет фона</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <label for="numberInput">Введите число: </label>
+    <input type="text" id="numberInput">
+    <button onclick="changeBackgroundColor()">Изменить цвет фона</button>
+
+    <script>
+        function changeBackgroundColor() {
+            var userInput = document.getElementById('numberInput').value;
+            var isEven = userInput % 2 === 0;
+            var bodyElement = document.body;
+
+            
+            if (isEven) {
+                bodyElement.style.backgroundColor = 'lightblue';
+            } else {
+                bodyElement.style.backgroundColor = 'lightcoral';
+            }
+        }
+    </script>
+</body>
+</html>
